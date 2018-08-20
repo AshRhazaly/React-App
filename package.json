@@ -38,6 +38,7 @@
     "react-dev-utils": "^5.0.1",
     "react-dom": "^16.4.2",
     "react-redux": "^5.0.7",
+    "reactotron-redux": "^2.1.0",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0",
     "resolve": "1.6.0",
@@ -98,6 +99,7 @@
   },
   "devDependencies": {
     "node-sass": "^4.9.3",
+    "reactotron-react-js": "^2.1.0",
     "sass-loader": "^7.1.0"
   }
 }
