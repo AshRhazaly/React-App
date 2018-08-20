@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 import Header from "./header/header";
+import { Button } from "reactstrap";
 
 export class Dashboard extends Component {
   render() {
@@ -7,8 +8,8 @@ export class Dashboard extends Component {
       <div>
         <Header />
       </div>
-    )
+    );
   }
 }
 
-export default Dashboard
+export default Dashboard;
