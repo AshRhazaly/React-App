@@ -23,31 +23,31 @@
             "id": 1,
             "label": "US Equities (Total)",
             "ticker": "VTI",
-            "weight": 50
+            "weight": 0.25
           },
           {
             "id": 2,
             "label": "US Equities (Dividends)",
             "ticker": "VIG",
-            "weight": 20
+            "weight": 0.3
           },
           {
             "id": 3,
             "label": "US Equities (Small-Cap, Growth)",
             "ticker": "VBK",
-            "weight": 30
+            "weight": 0.1
           },
           {
             "id": 4,
             "label": "US Equities (Mid-Cap, Value)",
             "ticker": "VOE",
-            "weight": 44
+            "weight": 0.2
           },
           {
             "id": 5,
             "label": "Convertible Bonds",
             "ticker": "CWB",
-            "weight": 66
+            "weight": 0.15
           }
         ],
         "international": [
@@ -55,14 +55,14 @@
             "id": 6,
             "label": "Asia ex-Japan Equities",
             "ticker": "VTI",
-            "weight": 22
+            "weight": 0.34
           },
-          { "id": 7, "label": "China Equities", "ticker": "PGJ", "weight": 33 },
+          { "id": 7, "label": "China Equities", "ticker": "PGJ", "weight": 0.50 },
           {
             "id": 8,
             "label": "US Equities (Total)",
             "ticker": "VTI",
-            "weight": 10
+            "weight": 0.16
           }
         ]
       }
