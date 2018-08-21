@@ -9,9 +9,14 @@ p {
   color: #fff;
 }
 
-.brandName {
+.brand-name {
   font-size: 18px;
   font-weight: bold;
+}
+
+.stashaway-logo {
+  height: 35px;
+  width: 40px;
 }
 
 .headerOverview {
@@ -24,4 +29,10 @@ p {
 
 .changeText {
   font-size: 12px;
+}
+
+.logout-container {
+  p {
+    font-size: 13px;
+  }
 }
