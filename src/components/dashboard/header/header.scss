@@ -1,0 +1,27 @@
+.headerContent {
+  //  fallback color for browsers that dont support gradients
+  background-color: #072340;
+  background-image: linear-gradient(to right, #11456d, #072849);
+  padding-top: 5px;
+}
+
+p {
+  color: #fff;
+}
+
+.brandName {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.headerOverview {
+  padding-top: 50px;
+}
+
+.previewText {
+  font-size: 25px;
+}
+
+.changeText {
+  font-size: 12px;
+}
