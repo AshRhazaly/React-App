@@ -1,0 +1,18 @@
+.overview-card {
+  background-color: #fff;
+
+  h4 {
+    color: #44596f;
+  }
+}
+.overview-card-body {
+  p {
+    color: #000;
+    font-size: 16px;
+  }
+
+  .annual-returns-value, .var-value, .optimized-value {
+    color: #39B96A;
+    font-size: 30px;
+  }
+}
