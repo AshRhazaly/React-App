@@ -3,7 +3,7 @@ import "./currency-exposure.scss";
 import convertToPercentage from "../../../../helpers/TransformNumber";
 
 const CurrencyExposure = ({ currencyExposure }) => {
-  const exposureList = currencyExposure.map(data => {
+  const currencyExposureList = currencyExposure.map(data => {
     return (
       <li className="col-6 list-item" key={data.id}>
         <section className="shadow-sm p-3 mr-1 mb-3 bg-white rounded row">
@@ -19,7 +19,7 @@ const CurrencyExposure = ({ currencyExposure }) => {
     <section className="pt-5">
       <h5>Global Currency Exposure</h5>
       <div className="col-12 pt-3 currency-exposure">
-        <ul className="row list-unstyled">{exposureList}</ul>
+        <ul className="row list-unstyled">{currencyExposureList}</ul>
       </div>
     </section>
   );
