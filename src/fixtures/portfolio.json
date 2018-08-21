@@ -9,13 +9,33 @@
       "valueAtRisk": 0.034,
       "optimizedCcy": "USD"
     },
-    "currencyExposure": {
-      "USD": 0.2,
-      "SGD": 0.3,
-      "EUR": 0.25,
-      "JPY": 0.125,
-      "Others": 0.125
-    },
+    "currencyExposure": [
+      {
+        "id": 1,
+        "label": "USD",
+        "value": 0.2
+      },
+      {
+        "id": 2,
+        "label": "SGD",
+        "value": 0.2
+      },
+      {
+        "id": 3,
+        "label": "EUR",
+        "value": 0.2
+      },
+      {
+        "id": 4,
+        "label": "JPY",
+        "value": 0.2
+      },
+      {
+        "id": 5,
+        "label": "Others",
+        "value": 0.2
+      }
+    ],
     "assetAllocation": {
       "asset": {
         "usa": [
@@ -57,7 +77,12 @@
             "ticker": "VTI",
             "weight": 0.34
           },
-          { "id": 7, "label": "China Equities", "ticker": "PGJ", "weight": 0.50 },
+          {
+            "id": 7,
+            "label": "China Equities",
+            "ticker": "PGJ",
+            "weight": 0.5
+          },
           {
             "id": 8,
             "label": "US Equities (Total)",
