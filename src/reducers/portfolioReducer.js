@@ -5,7 +5,7 @@ import {
 } from "../actions/types";
 
 const INITIAL_STATE = {
-  loading: false,
+  loading: true,
   error: "",
   portfolioData: []
 };
@@ -15,9 +15,14 @@ export default (state = INITIAL_STATE, action) => {
     case GET_PORTFOLIO_DATA:
       return { ...state, error: "", loading: true };
     case GET_PORTFOLIO_DATA_SUCCESS:
-      return { ...state, error: "", portfolioData: action.payload, loading: false };
+      return {
+        ...state,
+        error: "",
+        portfolioData: action.payload,
+        loading: false
+      };
     case GET_PORTFOLIO_DATA_FAIL:
-      return { ...state, error:action.payload, loading: false };
+      return { ...state, error: action.payload, loading: false };
     default:
       return state;
   }
