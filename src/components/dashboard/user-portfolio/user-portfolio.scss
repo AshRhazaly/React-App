@@ -1,0 +1,39 @@
+.portfolio-header {
+  color: #44596f;
+}
+
+.currency-exposure {
+  width: 60%;
+
+  .square {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+  }
+  
+  .usd {
+    background: #39B96A
+  }
+  .jpy {
+    background: #4A90E2
+  }
+  .sgd {
+    background: #F5A623
+  }
+  .others {
+    background: #f8e71c
+  }
+  .eur {
+    background: #7ED321
+  }
+
+  p {
+    color: #000;
+  }
+
+
+
+}
+
+
+
