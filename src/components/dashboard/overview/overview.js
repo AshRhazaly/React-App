@@ -1,5 +1,6 @@
 import React from "react";
 import "./overview.scss";
+import convertToPercentage from "../../../helpers/TransformNumber";
 
 const Overview = ({overviewData}) => {
   const {annualReturns, valueAtRisk, optimizedCcy} = overviewData;
@@ -13,11 +14,11 @@ const Overview = ({overviewData}) => {
         <div className="overview-card-body row">
           <div className="col text-center">
             <p className="annual-returns">Annual Returns:</p>
-            <p className="annual-returns-value">{annualReturns}</p>
+            <p className="annual-returns-value">{convertToPercentage(annualReturns, 2)}</p>
           </div>
           <div className="col text-center">
             <p className="var">VaR:</p>
-            <p className="var-value">{valueAtRisk}</p>
+            <p className="var-value">{convertToPercentage(valueAtRisk, 2)}</p>
           </div>
           <div className="col text-center">
             <p className="optimized">Optimised for:</p>
