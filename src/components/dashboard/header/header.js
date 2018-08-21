@@ -6,11 +6,17 @@ const Header = () => {
     <header className="headerContent">
       <section className="container">
         <section className="row">
-          <div className="col">
-            <p className="brandName">StashAway</p>
+          <div className="col pt-1">
+            <div className="row">
+              <img
+                className="stashaway-logo"
+                src={require("../../../assets/images/stashaway-logo-transparent.png")}
+              />
+              <p className="brand-name pt-1">StashAway</p>
+            </div>
           </div>
-          <div className="col">
-            <span className="row float-right">
+          <div className="col pt-2">
+            <span className="row float-right logout-container">
               <p className="px-4">Support</p>
               <p className="px-4">Log Out</p>
             </span>
@@ -20,7 +26,9 @@ const Header = () => {
       <section className="headerOverview d-flex flex-column">
         <section className="align-items-end">
           <p className="previewText text-center">Preview your Portfolio</p>
-          <p className="changeText text-center headerTitle">You can always change this later.</p>
+          <p className="changeText text-center headerTitle">
+            You can always change this later.
+          </p>
         </section>
       </section>
     </header>
