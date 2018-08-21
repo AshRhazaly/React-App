@@ -38,6 +38,7 @@
     "react": "^16.4.2",
     "react-dev-utils": "^5.0.1",
     "react-dom": "^16.4.2",
+    "react-loader-spinner": "^2.1.0",
     "react-redux": "^5.0.7",
     "reactotron-redux": "^2.1.0",
     "reactstrap": "^6.4.0",
