@@ -1,0 +1,44 @@
+{
+  "user": {
+    "userId": "Mr Harry Potter",
+    "userEmailAddress": "harrypotter@gryffindor.com"
+  },
+  "userPortfolio": {
+    "overview": {
+      "annualReturns": 0.05,
+      "var": 0.034,
+      "optimizedCcy": "USD"
+    },
+    "currencyExposure": {
+      "USD": 0.2,
+      "SGD": 0.3,
+      "EUR": 0.25,
+      "JPY": 0.125,
+      "Others": 0.125
+    },
+    "assetAllocation": {
+      "asset": {
+        "usa": [
+          { "label": "US Equities (Total)", "ticker": "VTI", "weight": 50 },
+          { "label": "US Equities (Dividends)", "ticker": "VIG", "weight": 20 },
+          {
+            "label": "US Equities (Small-Cap, Growth)",
+            "ticker": "VBK",
+            "weight": 30
+          },
+          {
+            "label": "US Equities (Mid-Cap, Value)",
+            "ticker": "VOE",
+            "weight": 44
+          },
+          { "label": "Convertible Bonds", "ticker": "CWB", "weight": 66 }
+        ],
+        "international": [
+          { "label": "Asia ex-Japan Equities", "ticker": "VTI", "weight": 22 },
+          { "label": "China Equities", "ticker": "PGJ", "weight": 33 },
+          { "label": "US Equities (Total)", "ticker": "VTI", "weight": 10 }
+        ]
+      }
+    }
+  }
+}
