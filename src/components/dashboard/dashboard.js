@@ -4,6 +4,7 @@ import Overview from "./overview/overview";
 import UserPortfolio from "./user-portfolio/user-portfolio";
 import { connect } from "react-redux";
 import { getPortfolioData } from "../../actions";
+import Loader from "react-loader-spinner";
 
 class Dashboard extends Component {
   componentDidMount = () => {
@@ -31,7 +32,11 @@ class Dashboard extends Component {
         </div>
       );
     } else {
-      return <div>i will build a loading screen</div>;
+      return (
+        <div className="d-flex justify-content-center align-items-center">
+          <Loader type="TailSpin" color="#00BFFF" height="500" width="500" />
+        </div>
+      );
     }
   }
 }
