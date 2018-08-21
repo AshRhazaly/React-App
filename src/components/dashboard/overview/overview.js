@@ -1,7 +1,8 @@
 import React from "react";
 import "./overview.scss";
 
-const Overview = () => {
+const Overview = ({overviewData}) => {
+  const {annualReturns, valueAtRisk, optimizedCcy} = overviewData;
   return (
     <section className="overview-card card p-5 shadow p-3 mb-5 bg-white rounded">
       <h4 className="card-title text-center">
@@ -11,16 +12,16 @@ const Overview = () => {
       <section className="card-body">
         <div className="overview-card-body row">
           <div className="col text-center">
-            <p className="annual-returns">Expected annual returns:</p>
-            <p className="annual-returns-value">1.1%</p>
+            <p className="annual-returns">Annual Returns:</p>
+            <p className="annual-returns-value">{annualReturns}</p>
           </div>
           <div className="col text-center">
             <p className="var">VaR:</p>
-            <p className="var-value">2.5%</p>
+            <p className="var-value">{valueAtRisk}</p>
           </div>
           <div className="col text-center">
             <p className="optimized">Optimised for:</p>
-            <p className="optimized-value">USD</p>
+            <p className="optimized-value">{optimizedCcy}</p>
           </div>
         </div>
       </section>
