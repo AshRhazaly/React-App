@@ -2,19 +2,47 @@ import React, { Component } from "react";
 import Header from "./header/header";
 import Overview from "./overview/overview";
 import UserPortfolio from "./user-portfolio/user-portfolio";
+import { connect } from "react-redux";
+import { getPortfolioData } from "../../actions";
 
-export class Dashboard extends Component {
+class Dashboard extends Component {
+  componentDidMount = () => {
+    this.props.getPortfolioData();
+  };
+
   render() {
-    return (
-      <div>
-        <Header />
-        <div className="p-5 container">
-          <Overview />
-          <UserPortfolio />
+    const { loading } = this.props;
+    const {
+      overview,
+      currencyExposure,
+      assetAllocation
+    } = this.props.portfolioData;
+    if (!loading) {
+      return (
+        <div>
+          <Header />
+          <div className="p-5 container">
+            <Overview overviewData={overview} />
+            <UserPortfolio
+              currencyExposureData={currencyExposure}
+              assetAllocationData={assetAllocation}
+            />
+          </div>
         </div>
-      </div>
-    );
+      );
+    } else {
+      return <div>i will build a loading screen</div>;
+    }
   }
 }
 
-export default Dashboard;
+const mapStateToProps = ({ portfolio }) => {
+  const { loading, portfolioData, error } = portfolio;
+
+  return { loading, portfolioData, error };
+};
+
+export default connect(
+  mapStateToProps,
+  { getPortfolioData }
+)(Dashboard);
