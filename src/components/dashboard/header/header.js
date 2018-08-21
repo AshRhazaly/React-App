@@ -10,7 +10,9 @@ const Header = () => {
             <div className="row">
               <img
                 className="stashaway-logo"
-                src={require("../../../assets/images/stashaway-logo-transparent.png")}
+                src={require("../../../assets/images/stashaway-logo-transparent.png")
+              }
+                alt="StashAway"
               />
               <p className="brand-name pt-1">StashAway</p>
             </div>
