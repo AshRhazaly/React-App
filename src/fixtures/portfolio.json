@@ -6,7 +6,7 @@
   "userPortfolio": {
     "overview": {
       "annualReturns": 0.05,
-      "var": 0.034,
+      "valueAtRisk": 0.034,
       "optimizedCcy": "USD"
     },
     "currencyExposure": {
@@ -19,24 +19,51 @@
     "assetAllocation": {
       "asset": {
         "usa": [
-          { "label": "US Equities (Total)", "ticker": "VTI", "weight": 50 },
-          { "label": "US Equities (Dividends)", "ticker": "VIG", "weight": 20 },
           {
+            "id": 1,
+            "label": "US Equities (Total)",
+            "ticker": "VTI",
+            "weight": 50
+          },
+          {
+            "id": 2,
+            "label": "US Equities (Dividends)",
+            "ticker": "VIG",
+            "weight": 20
+          },
+          {
+            "id": 3,
             "label": "US Equities (Small-Cap, Growth)",
             "ticker": "VBK",
             "weight": 30
           },
           {
+            "id": 4,
             "label": "US Equities (Mid-Cap, Value)",
             "ticker": "VOE",
             "weight": 44
           },
-          { "label": "Convertible Bonds", "ticker": "CWB", "weight": 66 }
+          {
+            "id": 5,
+            "label": "Convertible Bonds",
+            "ticker": "CWB",
+            "weight": 66
+          }
         ],
         "international": [
-          { "label": "Asia ex-Japan Equities", "ticker": "VTI", "weight": 22 },
-          { "label": "China Equities", "ticker": "PGJ", "weight": 33 },
-          { "label": "US Equities (Total)", "ticker": "VTI", "weight": 10 }
+          {
+            "id": 6,
+            "label": "Asia ex-Japan Equities",
+            "ticker": "VTI",
+            "weight": 22
+          },
+          { "id": 7, "label": "China Equities", "ticker": "PGJ", "weight": 33 },
+          {
+            "id": 8,
+            "label": "US Equities (Total)",
+            "ticker": "VTI",
+            "weight": 10
+          }
         ]
       }
     }
