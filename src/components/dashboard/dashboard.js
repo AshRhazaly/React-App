@@ -22,7 +22,7 @@ class Dashboard extends Component {
       return (
         <div>
           <Header />
-          <div className="p-5 container">
+          <div className="p-5 container dashboard">
             <Overview overviewData={overview} />
             <UserPortfolio
               currencyExposureData={currencyExposure}
