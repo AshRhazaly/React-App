@@ -3,7 +3,7 @@ table {
 }
 
 td {
-  width: 33%; 
+  width: 33%;
 }
 
 .asset-table-header {
@@ -12,4 +12,15 @@ td {
   th {
     color: #fff;
   }
+}
+
+.bar {
+  width: 0px;
+  height: 20px;
+  margin: 5px;
+  background-color: #4a90e2;
+}
+
+.bar-text {
+  font-size: 12px;
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import { Progress } from "reactstrap";
 import "./asset-allocation.scss";
 import convertToPercentage from "../../../../helpers/TransformNumber";
 
@@ -27,7 +26,15 @@ const AssetAllocation = ({ assetAllocation }) => {
               <td key={value.label}> {value.label}</td>
               <td key={value.ticker}>{value.ticker}</td>
               <td key={value.weight}>
-                <Progress value={value.weight * 100}>{convertToPercentage(value.weight,0)}</Progress>
+                <div className="row">
+                  <div
+                    className="bar"
+                    style={{ width: `${value.weight * 100}%` }}
+                  />
+                  <span className="bar-text mt-2">
+                    {convertToPercentage(value.weight, 0)}
+                  </span>
+                </div>
               </td>
             </tr>
           ))}
@@ -41,7 +48,15 @@ const AssetAllocation = ({ assetAllocation }) => {
               <td key={value.label}> {value.label}</td>
               <td key={value.ticker}>{value.ticker}</td>
               <td key={value.weight}>
-                <Progress value={value.weight * 100}>{convertToPercentage(value.weight,0)}</Progress>
+                <div className="row">
+                  <div
+                    className="bar"
+                    style={{ width: `${value.weight * 100}%` }}
+                  />
+                  <span className="bar-text mt-2">
+                    {convertToPercentage(value.weight, 0)}
+                  </span>
+                </div>
               </td>
             </tr>
           ))}
